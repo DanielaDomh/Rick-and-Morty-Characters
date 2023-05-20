@@ -109,10 +109,8 @@ p {
 }
 
 /* INPUT */
-
 .Input{
     position: absolute;
-    display: flex;
     left: 45%;
     top: 24%;
     transform: translate(-45%);

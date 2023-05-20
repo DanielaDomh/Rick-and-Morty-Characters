@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <div className='Container'>
-        <img className='Logo' src="/public/Logo.png" alt="" />
+        <img className='Logo' src="/Logo.png" alt="" />
     </div>
     <Location/>
     </>

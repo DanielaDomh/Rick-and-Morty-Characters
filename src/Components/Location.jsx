@@ -43,6 +43,7 @@ const Location = () => {
             {LocationInfo.residents?.length}
           </div>
         </div>
+        <h1 className="header">RESIDENTES REGISTRADOS EN ESTA DIMENSIÓN</h1>
         <div>
         <input
         type="text"
@@ -53,7 +54,6 @@ const Location = () => {
           Buscar
         </button>
         </div>
-        <h1 className="header">RESIDENTES REGISTRADOS EN ESTA DIMENSIÓN</h1>
       </div>
       {residentList.map((resident) => (
         <ResidentInfo key={resident} url={resident} />
