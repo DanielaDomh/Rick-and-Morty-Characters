@@ -35,7 +35,7 @@ p {
 
 .Container{
     position: sticky;
-    background-image: url("/bg-header.png");
+    background-image: url("/public/bg-header.png");
     background-size: cover;
     top: 0;
     display: flex;
@@ -85,7 +85,6 @@ p {
     max-width: 304px;
     z-index: 1;
     border-radius: 5px;
-
 }
 
 .Title {
@@ -138,6 +137,7 @@ p {
     border: 5px solid #57f052;
     box-shadow: 0px 0px 5px var(--bg-green2);
 }
+
 /* Responsive */
 
 @media (max-width: 390px) {
@@ -146,12 +146,13 @@ p {
     }
   }
 
-@media (max-width: 1320px) {
+@media (max-width: 390px) {
     .FirstContainer {
-        font-size: var(--small-size) ;
+        font-size: var(--general-size) ;
         gap: 10px;
         text-overflow: clip;
         white-space: normal;
+        display: grid;
     }
 }
 
