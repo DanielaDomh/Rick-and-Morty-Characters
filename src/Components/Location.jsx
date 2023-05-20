@@ -43,7 +43,7 @@ const Location = () => {
             {LocationInfo.residents?.length}
           </div>
         </div>
-        <h1 className="header">RESIDENTES REGISTRADOS EN ESTA DIMENSIÓN</h1>
+        <h1 className="header">TE AMO MI AMOR</h1>
         <div>
         <input
         type="text"
