@@ -7,7 +7,7 @@ const Location = () => {
   const [residentList, setResidents] = useState([]);
 
   const RandomID = Math.floor(Math.random() * 20) + 1;
-  
+
   useEffect(() => {
     axios
       .get(`https://rickandmortyapi.com/api/location/${RandomID}`)
@@ -17,12 +17,9 @@ const Location = () => {
       })
       .catch((error) => console.log(error));
   }, []);
-  
 
   return (
-  <>
-      <div>
-      </div>
+    <>
       <div className="Father">
         <div className="FirstContainer">
           <div className="Name">
@@ -46,19 +43,30 @@ const Location = () => {
             {LocationInfo.residents?.length}
           </div>
         </div>
+        <div>
+        <input
+        type="text"
+        placeholder="Type an ID"
+        className="Input"
+        />
+        <button className="button">
+          Buscar
+        </button>
+        </div>
+        <h1 className="header">RESIDENTES REGISTRADOS EN ESTA DIMENSIÓN</h1>
       </div>
-        {residentList.map((resident) => (
-          <ResidentInfo key={resident} url={resident} />
-        ))}
+      {residentList.map((resident) => (
+        <ResidentInfo key={resident} url={resident} />
+      ))}
 
-        {residentList.length > 0 ? (
-          <ul />
-        ) : (
-          <p className="error">
-            No parece haber rastros de vida inteligente aquí.
-          </p>
-        )}
-  </>
+      {residentList.length > 0 ? (
+        <ul />
+      ) : (
+        <p className="error">
+          No parece haber rastros de vida inteligente aquí.
+        </p>
+      )}
+    </>
   );
 };
 
