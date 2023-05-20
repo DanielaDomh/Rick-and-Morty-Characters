@@ -35,7 +35,7 @@ p {
 
 .Container{
     position: sticky;
-    background-image: url("bg-header.png");
+    background-image: url("/bg-header.png");
     background-size: cover;
     top: 0;
     display: flex;
