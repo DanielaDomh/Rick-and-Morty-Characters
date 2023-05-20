@@ -32,10 +32,9 @@ p {
 }
 
 /* Logo */
-
 .Container{
     position: sticky;
-    background-image: url("/public/bg-header.png");
+    background-image: url("/bg-header.png");
     background-size: cover;
     top: 0;
     display: flex;
@@ -113,7 +112,7 @@ p {
 
 .Input{
     position: absolute;
-    display: grid;
+    display: flex;
     left: 45%;
     top: 24%;
     transform: translate(-45%);
@@ -127,6 +126,7 @@ p {
 
 .button{
     position: absolute;
+    display: flex;
     left: 54%;
     top: 24%;
     background-color: var(--bg-green-dark);
