@@ -17,7 +17,6 @@ const Location = () => {
       })
       .catch((error) => console.log(error));
   }, []);
-
   return (
     <>
       <div className="Father">
@@ -43,7 +42,7 @@ const Location = () => {
             {LocationInfo.residents?.length}
           </div>
         </div>
-        <h1 className="header">TE AMO MI AMOR</h1>
+        <h1 className="header">RESIDENTES REGISTRADOS EN ESTA DIMENSIÓN</h1>
         <div>
         <input
         type="text"
@@ -55,10 +54,9 @@ const Location = () => {
         </button>
         </div>
       </div>
-      {residentList.map((resident) => (
+       {residentList.map((resident) => (
         <ResidentInfo key={resident} url={resident} />
-      ))}
-
+      ))} 
       {residentList.length > 0 ? (
         <ul />
       ) : (

@@ -141,7 +141,7 @@ p {
         font-size: var(--general-size) ;
         gap: 10px;
         text-overflow: clip;
-        white-space: normal;
+        white-space:nowrap;
         display: grid;
     }
     .error {
