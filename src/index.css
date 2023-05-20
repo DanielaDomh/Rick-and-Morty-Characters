@@ -136,7 +136,7 @@ p {
 }
 
 /* Responsive */
-@media sceen and (max-width: 767px) {
+@media (max-width: 767px) {
     .FirstContainer {
         font-size: var(--general-size) ;
         gap: 10px;
@@ -149,14 +149,14 @@ p {
       }
 }
 
-@media sceen and (max-width: 767px) {
+@media (max-width: 767px) {
     .Residents-Card {
         left: 10%;
         top: 300px;
     }
 }
 
-@media sceen and (max-width: 767px) {
+@media  (max-width: 767px) {
     .button {
         padding: 5px ; 
         left: 70%;
